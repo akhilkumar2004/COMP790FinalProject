@@ -3,7 +3,16 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - stealingpoint
+  - sittingpoint
+  - pickuppoint
+  - waypoint
+  - SnapPoint
+  - CorrectChair
+  - WrongSpice
+  - CorrectSpice
+  - CorrectItem
   layers:
   - Default
   - TransparentFX
