@@ -1,22 +1,30 @@
-using System;
+using UnityEngine;
+using TMPro;
 
-class Program
+public class ClockScript : MonoBehaviour
 {
-    static void Main()
-    {
-        // Get the current time
-        DateTime now = DateTime.Now;
+    private TextMeshPro textMeshPro;
 
-        // Check if the current time is exactly 17:00:00
-        if (now.ToString("HH:mm:ss") == "17:00:00")
+    // Closing time string
+    private string closingTime = "17:00:00";
+
+    void Start()
+    {
+        // Get the TextMeshPro component attached to this GameObject
+        textMeshPro = GetComponent<TextMeshPro>();
+        if (textMeshPro == null)
         {
-            Console.WriteLine("CLOSED!");
+            Debug.LogError("TextMeshPro component not found! Make sure this script is attached to a GameObject with a TextMeshPro component.");
         }
-        else
+    }
+
+    void Update()
+    {
+        if (textMeshPro != null)
         {
-            // Print the current time
-            string currentTime = now.ToString("hh:mm:ss");
-            Console.WriteLine("Current time- " + currentTime);
+            // Format the text to display the current time and closing time
+            string currentTime = System.DateTime.Now.ToString("HH:mm:ss");
+            textMeshPro.text = $"Current time-{currentTime}\nClosing time- {closingTime}";
         }
     }
 }
