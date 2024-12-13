@@ -21,6 +21,7 @@ public class SnapPoint : MonoBehaviour
         }
     }
 
+
     private void OnTriggerExit(Collider other)
     {
         if (other.CompareTag(requiredItem))
