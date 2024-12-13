@@ -6,22 +6,34 @@ public class ItemRegenerator : MonoBehaviour
     public class ItemSpawnPoint
     {
         public GameObject itemPrefab; // Prefab of the item to spawn
-        public Transform spawnPoint; // The position and rotation to spawn the item
+        public Transform spawnPoint; // Position and rotation for spawning
     }
 
-    public ItemSpawnPoint[] spawnPoints; // Array of items and their spawn points
+    [Header("Regeneration Settings")]
+    public ItemSpawnPoint[] spawnPoints; // Array of item spawn points
     public float regenerationDelay = 1.0f; // Delay before regenerating items
+    public int itemsToPlaceBeforeRegeneration = 3; // Number of items required to trigger regeneration
 
+    private int itemsPlaced = 0; // Tracks the number of items placed
     private bool isRegenerating = false;
 
-    // Call this when all items are snapped into place
-    public void RegenerateItems()
+    public void ItemPlaced()
     {
-        if (!isRegenerating)
+        itemsPlaced++;
+
+        if (itemsPlaced >= itemsToPlaceBeforeRegeneration)
         {
-            isRegenerating = true;
-            StartCoroutine(RegenerationCoroutine());
+            RegenerateItems();
+            itemsPlaced = 0; // Reset the count after regeneration
         }
+    }
+
+    private void RegenerateItems()
+    {
+        if (isRegenerating) return;
+
+        isRegenerating = true;
+        StartCoroutine(RegenerationCoroutine());
     }
 
     private System.Collections.IEnumerator RegenerationCoroutine()
@@ -38,6 +50,6 @@ public class ItemRegenerator : MonoBehaviour
             }
         }
 
-        isRegenerating = false; // Allow regeneration again
+        isRegenerating = false;
     }
 }

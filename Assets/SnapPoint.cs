@@ -4,6 +4,7 @@ public class SnapPoint : MonoBehaviour
 {
     public string requiredItem; // Tag of the item expected here
     private bool isOccupied = false;
+    public ItemRegenerator regenerator;
 
     private void OnTriggerEnter(Collider other)
     {
@@ -16,8 +17,7 @@ public class SnapPoint : MonoBehaviour
             // Mark this snap point as occupied
             isOccupied = true;
 
-            // Optional: Notify a manager about the placed item
-            //OrderManager.Instance.ItemPlaced(requiredItemTag);
+            regenerator.ItemPlaced();
         }
     }
 

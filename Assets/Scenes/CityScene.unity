@@ -202,7 +202,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 5.2, y: -1.48}
+  m_AnchoredPosition: {x: 5.475, y: -1.48}
   m_SizeDelta: {x: 20, y: 5}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &51711982
@@ -225,7 +225,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: SCREEN FOR INSTRUCTIONS
+  m_text: 'Current Order:
+
+    2 Fries, Dine In'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -4724,6 +4726,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   requiredItem: RequiredItem
+  regenerator: {fileID: 921056802}
 --- !u!65 &800659539
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -5889,6 +5892,7 @@ MonoBehaviour:
   - itemPrefab: {fileID: 5747350469317171707, guid: 31cbd933e2ecb8946ac3f977953579ad, type: 3}
     spawnPoint: {fileID: 1879538932}
   regenerationDelay: 1
+  itemsToPlaceBeforeRegeneration: 3
 --- !u!65 &921056803
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -9127,6 +9131,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   requiredItem: RequiredItem
+  regenerator: {fileID: 921056802}
 --- !u!1 &1487373242
 GameObject:
   m_ObjectHideFlags: 0
@@ -9635,6 +9640,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   requiredItem: RequiredItem
+  regenerator: {fileID: 921056802}
 --- !u!1001 &1599769958
 PrefabInstance:
   m_ObjectHideFlags: 0
