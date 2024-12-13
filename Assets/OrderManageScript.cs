@@ -146,6 +146,13 @@ public class OrderManageScript : MonoBehaviour
         placedFries = null;
         placedSauce = null;
 
+        // Update daily earnings
+        MoneyManageScript moneyManager = FindObjectOfType<MoneyManageScript>();
+        if (moneyManager != null)
+        {
+            moneyManager.AddEarnings(1.50f);
+        }
+
         // Generate a new order
         GenerateOrder();
     }
