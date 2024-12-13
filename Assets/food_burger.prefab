@@ -94,6 +94,7 @@ GameObject:
   - component: {fileID: 4938584438429926209}
   - component: {fileID: 4828941943903757485}
   - component: {fileID: 4828941943903757484}
+  - component: {fileID: 432144562752732012}
   m_Layer: 0
   m_Name: food_burger
   m_TagString: RequiredItem
@@ -285,3 +286,16 @@ MonoBehaviour:
   m_StartingSingleGrabTransformers: []
   m_StartingMultipleGrabTransformers: []
   m_AddDefaultGrabTransformers: 1
+--- !u!65 &432144562752732012
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5747350469317171707}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}

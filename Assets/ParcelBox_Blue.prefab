@@ -266,6 +266,7 @@ GameObject:
   - component: {fileID: 9213238817389468674}
   - component: {fileID: 7501424961843904668}
   - component: {fileID: 7501424961843904669}
+  - component: {fileID: -6317239116812735771}
   m_Layer: 0
   m_Name: ParcelBox_Blue
   m_TagString: Untagged
@@ -507,3 +508,16 @@ MonoBehaviour:
   m_StartingSingleGrabTransformers: []
   m_StartingMultipleGrabTransformers: []
   m_AddDefaultGrabTransformers: 1
+--- !u!65 &-6317239116812735771
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7267406357009628631}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.16408698, y: 0.05735054, z: 0.16950075}
+  m_Center: {x: 0, y: 0.02867527, z: 0}
