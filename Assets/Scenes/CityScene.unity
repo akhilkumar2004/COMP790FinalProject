@@ -4751,7 +4751,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 647d218a37253d649a646b2a2fbd4ac8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  requiredItem: 
+  requiredItem: RequiredItem
 --- !u!65 &800659539
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -9025,6 +9025,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1476010656}
   - component: {fileID: 1476010655}
+  - component: {fileID: 1476010657}
   m_Layer: 0
   m_Name: Position3
   m_TagString: SnapPoint
@@ -9060,6 +9061,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 31
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1476010657
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1476010654}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 647d218a37253d649a646b2a2fbd4ac8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  requiredItem: RequiredItem
 --- !u!1 &1487373242
 GameObject:
   m_ObjectHideFlags: 0
@@ -9519,6 +9533,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1590601691}
   - component: {fileID: 1590601690}
+  - component: {fileID: 1590601692}
   m_Layer: 0
   m_Name: Position2
   m_TagString: SnapPoint
@@ -9554,6 +9569,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 30
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1590601692
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1590601689}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 647d218a37253d649a646b2a2fbd4ac8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  requiredItem: RequiredItem
 --- !u!1001 &1599769958
 PrefabInstance:
   m_ObjectHideFlags: 0
