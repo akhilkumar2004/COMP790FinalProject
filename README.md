@@ -3,6 +3,7 @@
 **Development Team**: VirtuallyReal
 
 **Game Design Document**: **[https://www.overleaf.com/read/gnzsvjprdtcg#e52f96](https://www.overleaf.com/read/gnzsvjprdtcg#e52f96)**
+**Video Walkthrough**: **[https://drive.google.com/file/d/1rIRswyVlxnprc06YsCSNjpnkEf6iOAzI/view?usp=sharing](https://drive.google.com/file/d/1rIRswyVlxnprc06YsCSNjpnkEf6iOAzI/view?usp=sharing)**
 
 **Game Intro**: A thought-provoking VR fast food experience set in a restaurant, where players craft orders to serve customers before time runs out.
 
