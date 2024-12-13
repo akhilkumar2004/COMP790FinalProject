@@ -132,7 +132,6 @@ GameObject:
   m_Component:
   - component: {fileID: 16530440}
   - component: {fileID: 16530439}
-  - component: {fileID: 16530438}
   m_Layer: 0
   m_Name: TakeoutSpawn
   m_TagString: SnapPoint
@@ -140,19 +139,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &16530438
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 16530437}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 647d218a37253d649a646b2a2fbd4ac8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  requiredItem: 
 --- !u!65 &16530439
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1524,7 +1510,7 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 132326301}
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
@@ -2612,7 +2598,7 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 291457168}
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 0.39999998, y: 0.020000042, z: 0.29999995}
@@ -2828,7 +2814,6 @@ GameObject:
   m_Component:
   - component: {fileID: 384042054}
   - component: {fileID: 384042053}
-  - component: {fileID: 384042052}
   m_Layer: 0
   m_Name: PlateSpawn
   m_TagString: SnapPoint
@@ -2836,19 +2821,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &384042052
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 384042051}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 647d218a37253d649a646b2a2fbd4ac8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  requiredItem: 
 --- !u!65 &384042053
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -6020,7 +5992,6 @@ GameObject:
   m_Component:
   - component: {fileID: 926060796}
   - component: {fileID: 926060795}
-  - component: {fileID: 926060794}
   m_Layer: 0
   m_Name: FriesSpawn
   m_TagString: SnapPoint
@@ -6028,19 +5999,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &926060794
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 926060793}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 647d218a37253d649a646b2a2fbd4ac8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  requiredItem: 
 --- !u!65 &926060795
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -11305,7 +11263,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1879538932}
   - component: {fileID: 1879538931}
-  - component: {fileID: 1879538930}
   m_Layer: 0
   m_Name: BurgerSpawn
   m_TagString: SnapPoint
@@ -11313,19 +11270,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1879538930
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1879538929}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 647d218a37253d649a646b2a2fbd4ac8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  requiredItem: 
 --- !u!65 &1879538931
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -12936,7 +12880,7 @@ PrefabInstance:
       objectReference: {fileID: 1650723221}
     - target: {fileID: 3890648940858019422, guid: f3039bcff8af8fb4986e6c5c7524e115, type: 3}
       propertyPath: m_IsTrigger
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4125074370363831048, guid: f3039bcff8af8fb4986e6c5c7524e115, type: 3}
       propertyPath: m_Name
@@ -13262,7 +13206,7 @@ PrefabInstance:
       objectReference: {fileID: 1650723221}
     - target: {fileID: 8104180092891166744, guid: 7803597123c0ddf459a4ae04c8929dd9, type: 3}
       propertyPath: m_IsTrigger
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8646187420127895546, guid: 7803597123c0ddf459a4ae04c8929dd9, type: 3}
       propertyPath: m_RootOrder
